@@ -1,0 +1,49 @@
+# =========================================================
+# FastNoGhost - Configuration
+# =========================================================
+
+# Combat Settings
+combat:
+  # Maximum reach distance (blocks)
+  max-reach: 3.5
+  
+  # Minimum delay between hits (ms)
+  min-hit-delay: 100
+  
+  # Enable reach check
+  reach-check: true
+  
+  # Enable hit delay check
+  hit-delay-check: true
+  
+  # Enable wall check (can't hit through walls)
+  wall-check: true
+
+# Violation Settings
+violations:
+  # Points before action
+  reach-threshold: 5
+  hit-delay-threshold: 5
+  wall-threshold: 3
+  
+  # Action after threshold
+  # Options: WARN, KICK, BAN, LOG
+  action: "LOG"
+
+# Messages
+messages:
+  prefix: "&8[&6FastNoGhost&8] &r"
+  reach-detected: "&c⚠️ Reach detected! &7Distance: &e%distance%"
+  hit-delay-detected: "&c⚠️ Kill Aura detected! &7Delay: &e%delay%ms"
+  wall-detected: "&c⚠️ Wall hit detected!"
+  kicked: "&c❌ You were kicked for cheating!"
+  reloaded: "&a✅ Configuration reloaded!"
+
+# Log Settings
+logging:
+  # Log to console
+  console: true
+  
+  # Log to file
+  file: true
+  file-name: "violations.log"
