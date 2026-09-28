@@ -1,0 +1,20 @@
+name: FastNoGhost
+version: 1.0.0
+main: com.fast.ghostfix.FastNoGhost
+api-version: '1.21'
+author: Fast
+description: Anti Ghost Block System
+
+commands:
+  noghost:
+    description: Show plugin info
+    usage: /noghost
+  noghostreload:
+    description: Reload config
+    usage: /noghostreload
+    permission: fastnoghost.admin
+
+permissions:
+  fastnoghost.admin:
+    description: Admin permission
+    default: op
